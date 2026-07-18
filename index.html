@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AURA — Fine Café, Tragad</title>
-<meta name="description" content="Fine café experience in the heart of Tragad, Ahmedabad. Specialty coffee, artisan food, crafted with intention.">
-<meta property="og:title" content="AURA — Fine Café, Tragad, Ahmedabad">
-<meta property="og:description" content="Where every sip becomes a story. Fine café in the heart of Tragad.">
+<title>FRESH BITE — Fine Café, Ahmedabad</title>
+<meta name="description" content="A fresh café experience in the heart of Ahmedabad. Specialty coffee, great food, crafted with intention.">
+<meta property="og:title" content="FRESH BITE — Fine Café, Ahmedabad">
+<meta property="og:description" content="Where every sip becomes a story. Fine café in the heart of Ahmedabad.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&q=85&auto=format&fit=crop">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -16,10 +16,10 @@
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --black:#070707;--deep:#0d0d0d;--card:#121212;--card-hover:#181818;
-  --gold:#C9A84C;--gold-light:#E8C96A;--gold-pale:#F5E4B0;--gold-dim:#7A6228;
-  --gold-faint:rgba(201,168,76,0.08);--cream:#F5EDD6;--cream-dim:#B8A98A;
-  --white:#FFFFFF;--border:rgba(201,168,76,0.13);
+  --black:#080B12;--deep:#0A0E16;--card:#0F141E;--card-hover:#17202E;
+  --gold:#489863;--gold-light:#6CB989;--gold-pale:#DCEEE3;--gold-dim:#2F6142;
+  --gold-faint:rgba(72,152,99,0.08);--cream:#F2F6F3;--cream-dim:#A9B6AE;
+  --white:#FFFFFF;--border:rgba(72,152,99,0.13);
 }
 html{scroll-behavior:smooth;font-size:16px;scroll-padding-top:90px}
 body{background:var(--black);color:var(--cream);font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden;cursor:none}
@@ -40,7 +40,7 @@ body{background:var(--black);color:var(--cream);font-family:'Cormorant Garamond'
 .pre-emblem.show{opacity:1}.pre-emblem::before{content:'';position:absolute;inset:5px;border:1px solid rgba(201,168,76,0.2);border-radius:50%}
 .pre-emblem-inner{font-family:'Cinzel',serif;font-size:.55rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
 .pre-letters{display:flex;gap:.06em}
-.pre-letter{font-family:'Cinzel',serif;font-size:clamp(3.5rem,13vw,10rem);font-weight:700;color:transparent;background:linear-gradient(135deg,#5A4010 0%,#C9A84C 40%,#F5E4B0 55%,#C9A84C 70%,#5A4010 100%);-webkit-background-clip:text;background-clip:text;background-size:300% 300%;animation:goldShimmer 3s ease infinite;opacity:0;transform:translateY(35px);letter-spacing:.25em;transition:opacity .55s ease,transform .55s cubic-bezier(.22,1,.36,1)}
+.pre-letter{font-family:'Cinzel',serif;font-size:clamp(3.5rem,13vw,10rem);font-weight:700;color:transparent;background:linear-gradient(135deg,#234F34 0%,#489863 40%,#DCEEE3 55%,#489863 70%,#234F34 100%);-webkit-background-clip:text;background-clip:text;background-size:300% 300%;animation:goldShimmer 3s ease infinite;opacity:0;transform:translateY(35px);letter-spacing:.25em;transition:opacity .55s ease,transform .55s cubic-bezier(.22,1,.36,1)}
 .pre-letter.show{opacity:1;transform:translateY(0)}
 @keyframes goldShimmer{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .pre-bar{width:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transition:width .9s ease}
@@ -52,13 +52,13 @@ body{background:var(--black);color:var(--cream);font-family:'Cormorant Garamond'
 nav{position:fixed;top:0;left:0;right:0;z-index:800;padding:1.8rem 4rem;display:flex;align-items:center;justify-content:space-between;transition:background .5s,padding .4s,border-color .5s;border-bottom:1px solid transparent}
 nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(22px);padding:1.1rem 4rem;border-color:var(--border)}
 .nav-logo{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-decoration:none}
-.nav-logo-word{font-family:'Cinzel',serif;font-size:1.25rem;font-weight:700;letter-spacing:.38em;background:linear-gradient(135deg,#7A6228,#E8C96A,#C9A84C);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
+.nav-logo-word{font-family:'Cinzel',serif;font-size:1.25rem;font-weight:700;letter-spacing:.38em;background:linear-gradient(135deg,#2F6142,#6CB989,#489863);-webkit-background-clip:text;background-clip:text;color:transparent;display:block}
 .nav-logo-sub{font-family:'Montserrat',sans-serif;font-size:.42rem;letter-spacing:.5em;color:var(--gold-dim);text-transform:uppercase}
 .nav-center{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:3rem;list-style:none}
 .nav-center a{font-family:'Montserrat',sans-serif;font-size:.58rem;letter-spacing:.38em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none;position:relative;padding-bottom:3px;transition:color .3s}
 .nav-center a::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:1px;background:var(--gold);transition:width .4s}
 .nav-center a:hover{color:var(--gold-light)}.nav-center a:hover::after{width:100%}
-.nav-reserve{font-family:'Montserrat',sans-serif;font-size:.52rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#C9A84C,#E8C96A);padding:.65rem 1.4rem;text-decoration:none;transition:opacity .3s,transform .3s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);min-height:44px;display:flex;align-items:center}
+.nav-reserve{font-family:'Montserrat',sans-serif;font-size:.52rem;font-weight:500;letter-spacing:.35em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#489863,#6CB989);padding:.65rem 1.4rem;text-decoration:none;transition:opacity .3s,transform .3s;clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);min-height:44px;display:flex;align-items:center}
 .nav-reserve:hover{opacity:.85;transform:translateY(-1px)}
 .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:10px;z-index:810;min-width:44px;min-height:44px;align-items:center;justify-content:center}
 .nav-hamburger span{display:block;width:24px;height:1px;background:var(--gold);transition:transform .3s,opacity .3s,width .3s}
@@ -86,7 +86,7 @@ nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(22px);padding:1.1rem
 .hero-eyebrow{font-family:'Montserrat',sans-serif;font-size:.55rem;letter-spacing:.6em;text-transform:uppercase;color:var(--gold-dim);margin-bottom:1.8rem;display:flex;align-items:center;gap:1rem;opacity:0;transform:translateY(12px);transition:opacity .8s ease 1.6s,transform .8s ease 1.6s;position:relative;z-index:2}
 .hero-eyebrow.visible{opacity:1;transform:none}
 .hero-eyebrow::before,.hero-eyebrow::after{content:'';display:block;width:28px;height:1px;background:var(--gold-dim)}
-.hero-title{font-family:'Cinzel',serif;font-size:clamp(5rem,19vw,19rem);font-weight:700;line-height:.85;letter-spacing:.06em;background:linear-gradient(160deg,#4A3508 0%,#B8943C 25%,#E8C96A 45%,#F5E4B0 52%,#E8C96A 58%,#B8943C 78%,#4A3508 100%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 200%;animation:heroGold 7s ease infinite;opacity:0;transform:translateY(45px);transition:opacity 1s ease .7s,transform 1s cubic-bezier(.22,1,.36,1) .7s;user-select:none;position:relative;z-index:2}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(5rem,19vw,19rem);font-weight:700;line-height:.85;letter-spacing:.06em;background:linear-gradient(160deg,#1B3D27 0%,#2F6142 25%,#6CB989 45%,#DCEEE3 52%,#6CB989 58%,#2F6142 78%,#1B3D27 100%);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 200%;animation:heroGold 7s ease infinite;opacity:0;transform:translateY(45px);transition:opacity 1s ease .7s,transform 1s cubic-bezier(.22,1,.36,1) .7s;user-select:none;position:relative;z-index:2}
 .hero-title.visible{opacity:1;transform:none}
 @keyframes heroGold{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 .hero-rule{display:flex;align-items:center;gap:1.2rem;margin:2rem 0;opacity:0;transition:opacity .8s ease 1.9s;position:relative;z-index:2}
@@ -100,7 +100,7 @@ nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(22px);padding:1.1rem
 .hero-sub.visible{opacity:1;transform:none}
 .hero-cta{margin-top:3.5rem;display:flex;gap:1.5rem;align-items:center;opacity:0;transform:translateY(12px);transition:opacity .8s ease 2.4s,transform .8s ease 2.4s;position:relative;z-index:2}
 .hero-cta.visible{opacity:1;transform:none}
-.btn-primary{font-family:'Montserrat',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.42em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#C9A84C,#E8C96A,#C9A84C);background-size:200%;padding:1rem 2.5rem;text-decoration:none;transition:background-position .5s,transform .3s;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);min-height:44px;display:flex;align-items:center}
+.btn-primary{font-family:'Montserrat',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.42em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#489863,#6CB989,#489863);background-size:200%;padding:1rem 2.5rem;text-decoration:none;transition:background-position .5s,transform .3s;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);min-height:44px;display:flex;align-items:center}
 .btn-primary:hover{background-position:right;transform:translateY(-2px)}
 .btn-ghost{font-family:'Montserrat',sans-serif;font-size:.55rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold);text-decoration:none;padding-bottom:2px;border-bottom:1px solid rgba(201,168,76,.35);transition:color .3s,border-color .3s;min-height:44px;display:flex;align-items:flex-end}
 .btn-ghost:hover{color:var(--gold-light);border-color:var(--gold-light)}
@@ -269,7 +269,7 @@ nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(22px);padding:1.1rem
 .form-select{cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23C9A84C'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:calc(100% - 1.2rem) center;padding-right:2.5rem}
 .form-select option{background:var(--card)}
 .form-note{grid-column:span 2;font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;font-style:italic;color:rgba(184,169,138,.5);text-align:center;border-top:1px solid var(--border);padding-top:1.5rem;margin-top:.5rem}
-.form-submit{grid-column:span 2;font-family:'Montserrat',sans-serif;font-size:.55rem;letter-spacing:.45em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#C9A84C,#E8C96A,#C9A84C);background-size:200%;border:none;padding:1.2rem 2rem;cursor:pointer;transition:background-position .5s,transform .3s;min-height:52px;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%)}
+.form-submit{grid-column:span 2;font-family:'Montserrat',sans-serif;font-size:.55rem;letter-spacing:.45em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#489863,#6CB989,#489863);background-size:200%;border:none;padding:1.2rem 2rem;cursor:pointer;transition:background-position .5s,transform .3s;min-height:52px;clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%)}
 .form-submit:hover{background-position:right;transform:translateY(-2px)}
 .form-success{display:none;grid-column:span 2;text-align:center;padding:2rem;border:1px solid rgba(201,168,76,.3);background:var(--gold-faint)}
 .form-success p{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.2rem;font-style:italic;color:var(--gold)}
@@ -302,7 +302,7 @@ nav.scrolled{background:rgba(7,7,7,.9);backdrop-filter:blur(22px);padding:1.1rem
 /* FOOTER */
 footer{background:var(--deep);border-top:1px solid var(--border);padding:4rem 5rem 3rem}
 .footer-top{display:flex;justify-content:space-between;align-items:flex-start;padding-bottom:3rem;border-bottom:1px solid var(--border);margin-bottom:2rem;flex-wrap:wrap;gap:2rem}
-.footer-brand{font-family:'Cinzel',serif;font-size:1.4rem;font-weight:700;letter-spacing:.38em;background:linear-gradient(135deg,#7A6228,#E8C96A,#C9A84C);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:.5rem}
+.footer-brand{font-family:'Cinzel',serif;font-size:1.4rem;font-weight:700;letter-spacing:.38em;background:linear-gradient(135deg,#2F6142,#6CB989,#489863);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:.5rem}
 .footer-tagline{font-family:'Cormorant Garamond',Georgia,serif;font-size:.95rem;font-style:italic;color:var(--gold-dim);letter-spacing:.12em}
 .footer-nav{display:flex;gap:2.5rem;align-items:center;flex-wrap:wrap}
 .footer-nav a{font-family:'Montserrat',sans-serif;font-size:.5rem;letter-spacing:.38em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none;transition:color .3s;min-height:44px;display:flex;align-items:center}
@@ -419,7 +419,7 @@ footer{background:var(--deep);border-top:1px solid var(--border);padding:4rem 5r
 .vc-status{margin-top:1rem}
 
 /* MENU CATEGORY ACCENTS */
-.menu-card[data-cat="coffee"]{border-left:2px solid #C9A84C}
+.menu-card[data-cat="coffee"]{border-left:2px solid #489863}
 .menu-card[data-cat="food"]{border-left:2px solid #9CAE7C}
 .menu-card[data-cat="dessert"]{border-left:2px solid #D6A6A1}
 
@@ -442,7 +442,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
 /* FOLLOW / INSTAGRAM */
 #follow{padding:6rem 4rem;text-align:center;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--deep)}
 .follow-handle{font-family:'Cinzel',serif;font-size:clamp(1.6rem,4vw,2.6rem);color:var(--cream);margin-bottom:2rem}
-.follow-btn{display:inline-flex;align-items:center;gap:.8rem;font-family:'Montserrat',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.4em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#C9A84C,#E8C96A);padding:1rem 2.2rem;text-decoration:none;transition:opacity .3s,transform .3s;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);min-height:44px}
+.follow-btn{display:inline-flex;align-items:center;gap:.8rem;font-family:'Montserrat',sans-serif;font-size:.55rem;font-weight:500;letter-spacing:.4em;text-transform:uppercase;color:var(--black);background:linear-gradient(135deg,#489863,#6CB989);padding:1rem 2.2rem;text-decoration:none;transition:opacity .3s,transform .3s;clip-path:polygon(10px 0%,100% 0%,calc(100% - 10px) 100%,0% 100%);min-height:44px}
 .follow-btn:hover{opacity:.85;transform:translateY(-2px)}
 .follow-btn svg{width:16px;height:16px;fill:var(--black)}
 
@@ -459,8 +459,8 @@ img[loading="lazy"].loaded{animation:none;background:none}
   .menu-card{background:#fff;border:1px solid #ddd;break-inside:avoid}
   .mc-title,.section-title,.sig-name{color:#111}
   .mc-item-name,.mc-item-sub,.about-body{color:#333}
-  .mc-item-price{color:#8a6d28}
-  .eyebrow,.mc-category{color:#8a6d28}
+  .mc-item-price{color:#2F6142}
+  .eyebrow,.mc-category{color:#2F6142}
   .menu-tabs{display:none}
   .menu-card.hidden{display:flex!important}
 }
@@ -491,13 +491,13 @@ img[loading="lazy"].loaded{animation:none;background:none}
     <span class="pre-letter" id="pl2">R</span><span class="pre-letter" id="pl3">A</span>
   </div>
   <div class="pre-bar" id="preBar"></div>
-  <div class="pre-tagline" id="preTag">Fine Café · Tragad, Ahmedabad</div>
+  <div class="pre-tagline" id="preTag">Delight In Every Bite</div>
 </div>
 
 <!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">
-    <span class="nav-logo-word">AURA</span>
+    <span class="nav-logo-word">FRESH BITE</span>
     <span class="nav-logo-sub">Fine Café</span>
   </a>
   <ul class="nav-center">
@@ -526,8 +526,8 @@ img[loading="lazy"].loaded{animation:none;background:none}
   <div class="hero-grain"></div>
   <div class="hero-corner tl" id="hc1"></div><div class="hero-corner tr" id="hc2"></div>
   <div class="hero-corner bl" id="hc3"></div><div class="hero-corner br" id="hc4"></div>
-  <p class="hero-eyebrow" id="heroEyebrow">Fine Café · Tragad, Ahmedabad</p>
-  <h1 class="hero-title" id="heroTitle">AURA</h1>
+  <p class="hero-eyebrow" id="heroEyebrow">Delight In Every Bite</p>
+  <h1 class="hero-title" id="heroTitle">FRESH BITE</h1>
   <div class="hero-rule" id="heroRule">
     <div class="hero-rule-line" id="heroRuleL"></div>
     <div class="hero-rule-circle"></div><div class="hero-rule-diamond"></div><div class="hero-rule-circle"></div>
@@ -547,18 +547,18 @@ img[loading="lazy"].loaded{animation:none;background:none}
 <!-- MARQUEE -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <span class="m-item gold">AURA</span><span class="m-sep">✦</span>
+    <span class="m-item gold">FRESH BITE</span><span class="m-sep">✦</span>
     <span class="m-item">Specialty Coffee</span><span class="m-sep">·</span>
     <span class="m-item">Artisan Food</span><span class="m-sep">·</span>
-    <span class="m-item gold">Tragad · Ahmedabad</span><span class="m-sep">✦</span>
+    <span class="m-item gold">Ahmedabad · Ahmedabad</span><span class="m-sep">✦</span>
     <span class="m-item">Single-Origin Beans</span><span class="m-sep">·</span>
     <span class="m-item">Seasonal Menu</span><span class="m-sep">·</span>
     <span class="m-item gold">Est. 2024</span><span class="m-sep">✦</span>
     <span class="m-item">Unhurried Hospitality</span><span class="m-sep">·</span>
-    <span class="m-item">AURA</span><span class="m-sep">✦</span>
+    <span class="m-item">FRESH BITE</span><span class="m-sep">✦</span>
     <span class="m-item">Specialty Coffee</span><span class="m-sep">·</span>
     <span class="m-item">Artisan Food</span><span class="m-sep">·</span>
-    <span class="m-item gold">Tragad · Ahmedabad</span><span class="m-sep">✦</span>
+    <span class="m-item gold">Ahmedabad · Ahmedabad</span><span class="m-sep">✦</span>
     <span class="m-item">Single-Origin Beans</span><span class="m-sep">·</span>
     <span class="m-item">Seasonal Menu</span><span class="m-sep">·</span>
     <span class="m-item gold">Est. 2024</span><span class="m-sep">✦</span>
@@ -572,12 +572,12 @@ img[loading="lazy"].loaded{animation:none;background:none}
     <div class="about-number">01</div>
     <p class="about-kicker reveal">Our Story</p>
     <h2 class="about-headline reveal d1">Not just a café —<br>an <em>atmosphere</em> you<br>carry long after you leave.</h2>
-    <p class="about-body reveal d2">Tucked in the heart of Tragad, Aura was born from a single belief — that great coffee and carefully prepared food deserve a space as considered as the experience itself.</p>
-    <p class="about-body reveal d3" style="margin-top:1.4rem">We source our beans with discipline, cook with restraint, and plate with purpose. At Aura, slowing down is the whole point.</p>
+    <p class="about-body reveal d2">Tucked in the heart of Ahmedabad, Fresh Bite was born from a single belief — that great coffee and carefully prepared food deserve a space as considered as the experience itself.</p>
+    <p class="about-body reveal d3" style="margin-top:1.4rem">We source our beans with discipline, cook with restraint, and plate with purpose. At Fresh Bite, slowing down is the whole point.</p>
   </div>
   <div class="about-mid reveal d1">
     <div class="about-img-wrap">
-      <img class="about-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=80&auto=format&fit=crop" alt="Freshly crafted latte at Aura Café" loading="lazy">
+      <img class="about-img" src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&q=80&auto=format&fit=crop" alt="Freshly crafted latte at Fresh Bite" loading="lazy">
     </div>
     <p class="about-img-caption">Crafted by hand, served with care</p>
   </div>
@@ -610,7 +610,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
       <div class="reveal-left">
         <p class="sig-tag">Signature Dish</p>
         <h2 class="sig-name">The White<br>Garden</h2>
-        <p class="sig-desc">Thin-crust pizza with ricotta, fresh mozzarella, sage, and a finish of truffle oil. The dish Aura is known for.</p>
+        <p class="sig-desc">Thin-crust pizza with ricotta, fresh mozzarella, sage, and a finish of truffle oil. The dish Fresh Bite is known for.</p>
       </div>
       <div class="reveal-right">
         <div class="sig-price-box">
@@ -690,7 +690,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
       <div class="mc-num">01</div><p class="mc-category">Coffee</p>
       <h3 class="mc-title">Brewed to<br>Perfection</h3>
       <div class="mc-items">
-        <div class="mc-item"><div class="mc-item-top"><span class="mc-item-name">Aura Signature Blend</span><span class="mc-dots"></span><span class="mc-item-price">₹ 180</span></div><div class="mc-item-sub">Espresso, steamed oat milk, almond foam</div></div>
+        <div class="mc-item"><div class="mc-item-top"><span class="mc-item-name">Fresh Bite Signature Blend</span><span class="mc-dots"></span><span class="mc-item-price">₹ 180</span></div><div class="mc-item-sub">Espresso, steamed oat milk, almond foam</div></div>
         <div class="mc-item"><div class="mc-item-top"><span class="mc-item-name">Cold Brew Reserve</span><span class="mc-dots"></span><span class="mc-item-price">₹ 160</span></div><div class="mc-item-sub">18-hour steep, served chilled over ice</div></div>
         <div class="mc-item"><div class="mc-item-top"><span class="mc-item-name">Flat White</span><span class="mc-dots"></span><span class="mc-item-price">₹ 140</span></div><div class="mc-item-sub">Single-origin beans, velvety micro-foam</div></div>
         <div class="mc-item"><div class="mc-item-top"><span class="mc-item-name">Saffron Latte</span><span class="mc-dots"></span><span class="mc-item-price">₹ 200</span></div><div class="mc-item-sub">Whole milk, house-made saffron syrup</div></div>
@@ -724,20 +724,20 @@ img[loading="lazy"].loaded{animation:none;background:none}
 <!-- GALLERY -->
 <section id="gallery">
   <div class="gallery-header">
-    <p class="eyebrow reveal">Inside Aura</p>
+    <p class="eyebrow reveal">Inside Fresh Bite</p>
     <h2 class="section-title reveal d1">A Glimpse of the Experience</h2>
   </div>
   <div class="gallery-grid">
     <div class="gal-item tall">
-      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80&auto=format&fit=crop" alt="Aura Café Interior" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80&auto=format&fit=crop" alt="Fresh Bite Interior" loading="lazy">
       <div class="gal-item-label">The Space</div>
     </div>
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=700&q=80&auto=format&fit=crop" alt="Espresso at Aura" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=700&q=80&auto=format&fit=crop" alt="Espresso at Fresh Bite" loading="lazy">
       <div class="gal-item-label">The Espresso</div>
     </div>
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format&fit=crop" alt="Plated food at Aura" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80&auto=format&fit=crop" alt="Plated food at Fresh Bite" loading="lazy">
       <div class="gal-item-label">The Plate</div>
     </div>
     <div class="gal-item">
@@ -745,7 +745,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
       <div class="gal-item-label">The Craft</div>
     </div>
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80&auto=format&fit=crop" alt="Aura Café ambience" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700&q=80&auto=format&fit=crop" alt="Fresh Bite ambience" loading="lazy">
       <div class="gal-item-label">The Ambience</div>
     </div>
   </div>
@@ -754,11 +754,11 @@ img[loading="lazy"].loaded{animation:none;background:none}
 <!-- PHILOSOPHY -->
 <section id="philosophy">
   <div class="phil-ring"></div><div class="phil-ring-2"></div>
-  <span class="phil-label reveal">The Aura Philosophy</span>
+  <span class="phil-label reveal">The Fresh Bite Philosophy</span>
   <blockquote class="phil-quote reveal d1">
-    "In Tragad, we built a café for people<br>who believe the best part of the day<br>deserves a space as good as the <span class="gold">coffee in it.</span>"
+    "In Ahmedabad, we built a café for people<br>who believe the best part of the day<br>deserves a space as good as the <span class="gold">coffee in it.</span>"
   </blockquote>
-  <p class="phil-source reveal d2">— Arjun Shah, Founder, Aura</p>
+  <p class="phil-source reveal d2">— Arjun Shah, Founder, Fresh Bite</p>
 </section>
 
 <div class="ornament-rule"><div class="ornament-line"></div><div class="ornament-center"><div class="ornament-diamond"></div><div class="ornament-ring"></div><div class="ornament-diamond"></div></div><div class="ornament-line"></div></div>
@@ -772,13 +772,13 @@ img[loading="lazy"].loaded{animation:none;background:none}
   <div class="testi-grid">
     <div class="testi-card reveal">
       <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
-      <p class="testi-text">"Aura is the kind of place you discover on a slow morning and end up returning to every week. The White Garden pizza alone is worth the visit — but it's the atmosphere that keeps you."</p>
+      <p class="testi-text">"Fresh Bite is the kind of place you discover on a slow morning and end up returning to every week. The White Garden pizza alone is worth the visit — but it's the atmosphere that keeps you."</p>
       <span class="testi-name">Priya Mehta</span>
       <span class="testi-detail">Ahmedabad · Regular Guest</span>
     </div>
     <div class="testi-card reveal d1">
       <div class="testi-stars">✦ ✦ ✦ ✦ ✦</div>
-      <p class="testi-text">"I've been to cafés across Mumbai and Pune. Aura stands entirely on its own. The Cold Brew Reserve is serious coffee — the kind that makes you pause mid-sip."</p>
+      <p class="testi-text">"I've been to cafés across Mumbai and Pune. Fresh Bite stands entirely on its own. The Cold Brew Reserve is serious coffee — the kind that makes you pause mid-sip."</p>
       <span class="testi-name">Rohan Desai</span>
       <span class="testi-detail">Mumbai · Visited July 2024</span>
     </div>
@@ -798,14 +798,14 @@ img[loading="lazy"].loaded{animation:none;background:none}
   <div class="founder-inner">
     <div class="founder-img-wrap reveal-left">
       <div class="founder-frame"></div>
-      <img class="founder-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&crop=face" alt="Arjun Shah, Founder of Aura Café" loading="lazy">
+      <img class="founder-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop&crop=face" alt="Arjun Shah, Founder of Fresh Bite" loading="lazy">
     </div>
     <div class="founder-text reveal-right">
-      <p class="founder-kicker">The Mind Behind Aura</p>
+      <p class="founder-kicker">The Mind Behind Fresh Bite</p>
       <h2 class="founder-name">Arjun Shah</h2>
       <p class="founder-title">Founder & Head of Experience</p>
       <p class="founder-body">Arjun grew up watching his grandmother run a small tea stall near the old city. He went on to train as a barista in Chikmagalur and spent two years working alongside chefs in Bangalore and Goa. He returned to Ahmedabad with one clear intention: build the café he always wanted to find but never could.</p>
-      <p class="founder-body">Aura is that café. Every decision — from the bean sourcing to the chair selection — passes through a single question: <em style="color:var(--gold)">does this make the guest feel something?</em></p>
+      <p class="founder-body">Fresh Bite is that café. Every decision — from the bean sourcing to the chair selection — passes through a single question: <em style="color:var(--gold)">does this make the guest feel something?</em></p>
       <p class="founder-sign">— Arjun</p>
     </div>
   </div>
@@ -895,7 +895,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
     <div class="visit-cell reveal">
       <div class="vc-emblem" style="font-size:1.3rem">📍</div>
       <p class="vc-title">Location</p>
-      <p class="vc-body"><strong>Aura Café, Godrej Garden City</strong>Shop No. 11, Godrej Vannangan<br>Opp. Global Indian International School<br>Jagatpur, Ahmedabad — 382470</p>
+      <p class="vc-body"><strong>Fresh Bite, Godrej Garden City</strong>Shop No. 11, Godrej Vannangan<br>Opp. Global Indian International School<br>Jagatpur, Ahmedabad — 382470</p>
     </div>
     <div class="visit-cell reveal d1">
       <div class="vc-emblem" style="font-size:1.3rem">🕐</div>
@@ -912,7 +912,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.1234567890!2d72.6052!3d23.1285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e836a0e0e0e0f%3A0xabc123!2sGodrej+Garden+City%2C+Jagatpur%2C+Ahmedabad%2C+Gujarat+382470!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Aura Café location — Godrej Garden City, Jagatpur, Ahmedabad">
+        title="Fresh Bite location — Godrej Garden City, Jagatpur, Ahmedabad">
       </iframe>
     </div>
   </div>
@@ -924,7 +924,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
   <p class="follow-handle reveal d1">@auracafe.in</p>
   <p class="reveal d2" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;color:var(--cream-dim);font-size:1.1rem;margin-bottom:2.5rem;letter-spacing:.1em">Behind the scenes. Daily specials. The little moments.</p>
   <a href="https://instagram.com/auracafe.in" target="_blank" rel="noopener" class="follow-btn reveal d3">
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#070707" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#070707" stroke-width="1.5"/></svg>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="#080B12" stroke-width="1.5"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#080B12" stroke-width="1.5"/></svg>
     Follow on Instagram
   </a>
 </section>
@@ -933,8 +933,8 @@ img[loading="lazy"].loaded{animation:none;background:none}
 <footer>
   <div class="footer-top">
     <div>
-      <span class="footer-brand">AURA</span>
-      <span class="footer-tagline">Fine Café · Godrej Garden City, Ahmedabad</span>
+      <span class="footer-brand">FRESH BITE</span>
+      <span class="footer-tagline">Delight In Every Bite</span>
     </div>
     <nav class="footer-nav">
       <a href="#about">Story</a><a href="#menu">Menu</a>
@@ -946,7 +946,7 @@ img[loading="lazy"].loaded{animation:none;background:none}
     </div>
   </div>
   <div class="footer-bottom">
-    <p class="footer-copy">© 2025 Aura Café · Godrej Garden City, Ahmedabad · All rights reserved</p>
+    <p class="footer-copy">© 2025 Fresh Bite · Ahmedabad · All rights reserved</p>
     <p class="footer-credit">Crafted with intention. Served with care.</p>
   </div>
 </footer>
@@ -1064,7 +1064,7 @@ document.getElementById('bookingForm').addEventListener('submit', e => {
   const request = document.querySelector('[name="request"]').value;
 
   const message =
-`✦ New Table Reservation — Aura Café
+`✦ New Table Reservation — Fresh Bite
 
 Name: ${name}
 Phone: ${phone}
